@@ -27,11 +27,24 @@ migrate_working_dir/
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
 /build/
 /coverage/
+
+# FVM (https://fvm.app) — machine-local SDK symlink
+.fvm/
+
+# Local env / secrets (commit `.env.example` as a template if you use env files)
+.env
+.env.*
+!.env.example
+
+# Profiling / dumps / merge junk
+*.hprof
+*.orig
 
 # Symbolication related
 app.*.symbols
