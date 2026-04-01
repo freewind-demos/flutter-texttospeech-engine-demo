@@ -26,6 +26,47 @@ flutter run
 flutter run -d android
 ```
 
+### 命令行只编译出 APK（安装包文件）
+
+需要 `flutter doctor` 中 Android  toolchain 正常（已装 **Android SDK**，`ANDROID_HOME` 或 Android Studio 默认 SDK 路径可被找到，并已接受 license）。
+
+**调试包**（体积大、含调试信息，签名 debug）：
+
+```bash
+cd /path/to/flutter-texttospeech-engine-demo
+flutter build apk --debug
+```
+
+产物路径：
+
+```text
+build/app/outputs/flutter-apk/app-debug.apk
+```
+
+**发布包**（默认 release、已压缩，仍使用模板 debug 密钥；上架商店需自行配置正式签名）：
+
+```bash
+flutter build apk --release
+```
+
+产物路径：
+
+```text
+build/app/outputs/flutter-apk/app-release.apk
+```
+
+也可以打 **App Bundle**（上架 Google Play 用）：
+
+```bash
+flutter build appbundle --release
+```
+
+产物路径：
+
+```text
+build/app/outputs/bundle/release/app-release.aab
+```
+
 ## 概念讲解
 
 ### 第一部分：为什么这还是「本机 TTS」
