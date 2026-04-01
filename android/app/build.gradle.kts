@@ -8,7 +8,8 @@ plugins {
 android {
     namespace = "com.example.flutter_texttospeech_engine_demo"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    // Omit ndkVersion: this demo has no native (CMake/ndk-build) code; pinning it forces
+    // AGP to download a specific NDK, which fails on restricted networks.
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
