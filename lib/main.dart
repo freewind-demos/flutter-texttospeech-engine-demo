@@ -36,7 +36,9 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final _textController = TextEditingController(
-    text: '第一段。\n第二段会接在后面朗读。\n第三段。',
+    text: '今天天气不错，很适合出门散步、顺便买杯咖啡。\n'
+        'Here is a short English sentence for the TTS demo.\n'
+        '第三段试试中英文混在一起：会议改到 Friday 下午三点了，记得 check your calendar。',
   );
   final _flutterTts = FlutterTts();
 
