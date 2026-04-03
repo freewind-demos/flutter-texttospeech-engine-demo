@@ -13,7 +13,7 @@
 
 ### 运行
 
-在项目根目录执行：
+在本 README 所在目录（仓库根目录）执行：
 
 ```bash
 flutter pub get
